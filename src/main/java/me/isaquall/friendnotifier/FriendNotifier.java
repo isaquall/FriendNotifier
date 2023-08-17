@@ -118,7 +118,7 @@ public class FriendNotifier extends Extension {
     private void onChat(HMessage hMessage) {
         String message = hMessage.getPacket().readString();
         switch (message) {
-            case ":playlist":
+            case ":playerlist":
             case ":pl":
                 hMessage.setBlocked(true);
                 sendToClient(new HPacket("Whisper", HMessage.Direction.TOCLIENT, userIndex, usersInRoom.size() + " Habbos in room: " + String.join(", ", usersInRoom.values()) + ".", 0, 30, 0, -1));

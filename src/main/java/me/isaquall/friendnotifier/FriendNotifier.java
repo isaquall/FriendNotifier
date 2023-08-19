@@ -15,7 +15,7 @@ import java.util.Map;
 
 @ExtensionInfo(
         Title = "FriendNotifier",
-        Description = "Know when your friends log on and off!",
+        Description = "Know when your friends log on and off, and more!",
         Version = "1.0",
         Author = "isaquall"
 )
